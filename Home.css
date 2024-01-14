@@ -1,0 +1,154 @@
+*{
+ margin:0;   
+}
+
+.Header{
+    width: 100%;
+    height:100% ;
+    min-height:10vh;
+    background-color:rgba(218, 236, 236, 0.043);
+}
+.Logo{
+    margin: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    padding:10px;
+}
+
+.BaseContainer{
+    width: 100%;
+    height: 100%;
+    min-height:100vh;
+    /* background:linear-gradient(#2996df9f,#0a796eac); */
+    background:linear-gradient( #6e8793c4,#0d405de8 );
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.Container{
+    width: 100%;
+    height: 100%;
+    min-height:90vh;
+    /* background:linear-gradient(#2996df9f,#0a796eac); */
+    /* background:linear-gradient( #99c9d4b5,#0d405de8 ); */
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction:row;    
+}
+
+.HomeContainer{
+    width:30%;
+    height:100%;
+    min-height:35vh;
+    border: 3px solid rgba(31, 87, 121, 0.607);
+    box-shadow: 1px 1px 1px 1px rgba(31, 87, 121, 0.377);
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction:column;
+    border-radius:8px;
+    background-color:rgba(31, 87, 121, 0.532);
+    color: aliceblue;
+    transition:0.5s;
+}
+
+.HomeContainer:hover{
+    transform: scale(1.03);
+    box-shadow: 2px 2px 2px 2px rgba(31, 87, 121, 0.263);
+}
+
+.HomeText{
+    font-size: large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+
+.input{
+    width:60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.file-input-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.file-input-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-file-input {
+    display: inline-block;
+    padding: 8px;
+    cursor: pointer;
+    background-color: rgba(22, 107, 146, 0.518);
+    border:2px solid rgba(240, 248, 255, 0.507);
+    border-radius:8px;
+    color:aliceblue;            
+}
+.custom-file-input:active{
+    background-color: rgba(105, 230, 201, 0.562);
+    border:2px solid aliceblue;    
+}
+
+.btn{
+    width:25%;
+    font-size: large;
+    padding: 8px;
+    background-color: rgba(10, 136, 194, 0.623);
+    border:2px solid aliceblue;
+    border-radius:8px;
+    color:aliceblue;
+    cursor: pointer;
+    transition:0.5s;
+}
+
+.btn:hover{
+    background-color: rgba(105, 230, 201, 0.562); 
+    border:2px solid  rgba(8, 130, 102, 0.932);;
+}
+.ShowBtn{
+    width:35%;
+    font-size: medium;
+}
+
+.LeftContainer{
+    width:60%;
+    /* background-color: aquamarine; */
+}
+.LeftImg{
+    width:70%;
+}
+
+@media screen and (max-width: 600px) {
+
+    .Container{
+        width:100%;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .LeftContainer{
+        width:100%;
+    }
+    .LeftImg{
+        width: 100%;
+    }
+    .HomeContainer{
+        width: 85%;
+        height:70%;
+        min-height:20vh;
+    }
+}
